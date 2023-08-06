@@ -121,7 +121,6 @@ header > .nav-bar {
 
 }
 
-
 .menu.show {
     display: block; /* Afficher le menu quand la classe "show" est appliquée */
     background-color: #f0f2f4;
@@ -145,12 +144,15 @@ header > .nav-bar {
 
 }
 
-.menu a:hover {
-    background-color: #e87722;
-    color: white;
-    transition: background-color ease-in-out 0.5s;
-}
 
+@media screen and (max-width: 768px) {
+    .menu a:hover {
+        background-color:  #e87722;
+        transition: background-color ease-in-out 0.5s;
+
+    }
+
+}
 
 /* Adaptation pour les écrans de taille moyenne (tablette) */
 @media screen and (min-width: 768px) {
@@ -176,9 +178,7 @@ header > .nav-bar {
     }
 
     .menu a {
-        width: 100%;
-        text-align: center;
-
+         text-align: center;
     }
 
     .title {
@@ -196,20 +196,34 @@ header > .nav-bar {
 
     .menu {
         display: flex; /* Cacher le menu au départ */
-        flex-grow: 2;
+        flex-grow: 1;
         justify-content: space-between;
         transition: display ease-in-out 2s;
-
-
     }
+    .menu a:hover {
+        border-bottom: solid 2px #e87722;
+        border-radius: 50%;
+        transition: background-color ease-in-out 0.5s;
+      }
 
-
-
-
+    .active{
+        border-bottom: solid 2px #e87722;
+        border-radius: 50%;
+    }
 }
 
-
 /* ################ Fin - Header */
+
+
+
+
+/* ################ Section Présentation */
+
+
+
+
+
+/* ################ Fin Présentation */
 
 
 
