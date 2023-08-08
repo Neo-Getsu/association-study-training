@@ -53,14 +53,15 @@ table {
     border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /* ############## Fin reset */
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
+    font-family: Poppins,sans-serif ;
+
+    background-color: #dfdcdc;
     width: 100%;
     height: 100vh;
 }
@@ -68,9 +69,11 @@ body {
 h3{
     font-size: 1.4rem;
 }
+h4{
+    font-size: 1.2rem;
+}
 
 
-/* Class custom */
 
 
 /* ################ Header */
@@ -150,72 +153,7 @@ header > .nav-bar {
 }
 
 
-@media screen and (max-width: 768px) {
-    .menu a:hover {
-        background-color:  #e87722;
-        transition: background-color ease-in-out 0.5s;
 
-    }
-
-}
-
-/* Adaptation pour les écrans de taille moyenne (tablette) */
-@media screen and (min-width: 768px) {
-    .menu.show {
-        transform: translateY(10px);
-    }
-
-    .title {
-        font-size: 1.4rem;
-    }
-
-    .nav-bar {
-        padding: 15px;
-    }
-
-}
-
-/* Adaptation pour les écrans de grande taille (desktop) */
-@media screen and (min-width: 1024px) {
-    .nav-bar {
-        padding: 20px;
-        font-size: 1.4rem;
-    }
-
-    .menu a {
-         text-align: center;
-    }
-
-    .title {
-        font-size: 1.7rem;
-    }
-
-    .nav-bar img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .menu-btn {
-        display: none;
-    }
-
-    .menu {
-        display: flex; /* Cacher le menu au départ */
-        flex-grow: 1;
-        justify-content: space-between;
-        transition: display ease-in-out 2s;
-    }
-    .menu a:hover {
-        border-bottom: solid 2px #e87722;
-        border-radius: 50%;
-        transition: background-color ease-in-out 0.5s;
-      }
-
-    .active{
-        border-bottom: solid 2px #e87722;
-        border-radius: 50%;
-    }
-}
 
 /* ################ Fin - Header */
 
@@ -233,12 +171,7 @@ section.about-us{
 
 
 }
-.container{
 
-
-
-
-}
 
 .img-container{
     display: flex;
@@ -251,37 +184,115 @@ section.about-us{
     position: relative;
 
 }
-#svg{
 
-    position: absolute;
-    bottom: 0;
-    color: white;
-    overflow: hidden;
 
-}
+.bande-passante{
+width: 100%;
+height: 50px;
+background-color: #1150a0;
+padding: 5px;
+color: #fff;
+display: flex;
+align-items: center;
+font-family: Montserrat, sans-serif;
+line-height: 30px;
+  }
+
 
 .presentation{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.cards{
-
-    border-radius: 8px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    width:300px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    margin: 10px;
+}
+.vignette{
+    margin-top: 10px;
+    width: 100%;
+    border-bottom: solid 5px;
+    border-radius: 200px / 50px;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+
+    /*
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+     */
+}
+.colors-card-1{
+    color: #d04251;
+}
+ .colors-card-2{
+ color: #21b793;
+}
+.colors-card-3{
+    color: #4a98c8;
 }
 
-.header-cards{
 
-    background-color: #e87722;
-    border-radius: 8px 8px 0 0;
+.redirection a.colors-card-1::after{
+    background-color: #d04251;
+}
+.redirection a.colors-card-2::after{
+    background-color:#21b793;
+}
+.redirection a.colors-card-3::after{
+    background-color: #4a98c8;
+}
+
+.title-presentation{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin : 35px 0;
+}
+
+.cards h4, .cards p, .redirection{
+    margin: 5px;
     padding: 5px;
+}
+.cards > p{
+    line-height: 21px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.cards > h4{
+     text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-weight: bold;
+ }
+
+.redirection{
+display: flex;
+    gap: 20px;
+
+flex-direction: column;
+}
+.redirection a{
+width: 70%;
+
+text-decoration: none;
+font-weight: 400;
+font-size: 18px;
+padding: 5px;
+position: relative;
+font-family: Poppins;
+
 
 }
+.redirection a::after {
+    content: ""; /* Contenu vide pour l'élément interne */
+    position: absolute;
+    bottom: -3px; /* Décaler vers le bas pour la "bordure" */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-55%); /* Centrer horizontalement */
+    width: 180px; /* Largeur de la "bordure" */
+    height: 2px; /* Hauteur de la "bordure" */
+    background-color: black;
+}
+
 
 
 
@@ -289,5 +300,164 @@ section.about-us{
 
 /* ################ Fin Présentation */
 
+@media screen and (max-width: 768px) {
+    .menu a:hover {
+        background-color:  #e87722;
+        transition: background-color ease-in-out 0.5s;
+    }
+}
+
+/* Adaptation pour les écrans de taille moyenne (tablette) */
+@media screen and (min-width: 768px) {
+
+    /*############# HEADER */
+    .menu.show {
+        transform: translateY(10px);
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .nav-bar {
+        padding: 15px;
+    }
+
+    /*############## Presnetation page  */
+
+    *{
+    }
+    .presentation{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        justify-content: center;
+        margin: 0;
+    }
+    .presentation .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+    .presentation .cards p{
+        text-align: justify;
+
+    }
+   .presentation .cards h4, .presentation   {
+        text-align: center;
+    }
+    .cards .redirection a{
+        width: 100%;
+    }
+    .presentation .cards:last-child {
+        grid-column-end: span 2; /* L'élément occupe deux colonnes */
+        grid-row-end: span 1; /* L'élément occupe deux lignes */
+        text-align: center; /* Centrage horizontal */
+        justify-content: center; /* Centrage vertical */
+    }
+    .redirection a::after {
+        content: ""; /* Contenu vide pour l'élément interne */
+        position: absolute;
+        bottom: -1px; /* Décaler vers le bas pour la "bordure" */
+        left: 50%; /* Centrer horizontalement */
+        transform: translateX(-50%); /* Centrer horizontalement */
+        width: 250px; /* Largeur de la "bordure" */
+        height: 2px; /* Hauteur de la "bordure" */
+
+    }
 
 
+    .bande-passante {
+        justify-content: center;
+    }
+
+
+
+
+}
+
+/* Adaptation pour les écrans de grande taille (desktop) */
+@media screen and (min-width: 1024px) {
+    .nav-bar {
+        padding: 20px;
+        font-size: 1.4rem;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .nav-bar img {
+        width: 60px;
+        height: 60px;
+    }
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    display: flex; /* Cacher le menu au départ */
+    flex-grow: 1;
+    justify-content: space-between;
+    transition: display ease-in-out 2s;
+}
+.menu a:hover {
+    border-bottom: solid 2px #e87722;
+    border-radius: 50%;
+    transition: background-color ease-in-out 0.5s;
+}
+
+.active{
+    border-bottom: solid 2px #e87722;
+    border-radius: 50%;
+}
+
+/* #####Presentation */
+.presentation{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.presentation .cards:last-child {
+     grid-row-start: span 1;
+     grid-column-start: span 1;
+}
+
+
+}
+@media screen and (min-width: 1024px) {
+   .cards > p {
+       font-size:15px;
+       margin: 20px;
+
+    }
+    .cards > .redirection > a {
+        font-size: 15px;
+
+    }
+    .redirection a::after {
+    width: 200px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+.cards > p {
+    font-size:18px;
+    margin: 30px;
+  }
+.cards > .redirection > a {
+    font-size: 18px;
+
+}
+.redirection a::after {
+    width: 250px;
+}
+
+}
