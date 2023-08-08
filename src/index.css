@@ -214,11 +214,6 @@ line-height: 30px;
     border-top-right-radius:10px ;
     border-top-left-radius:10px ;
 
-    /*
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-
-     */
 }
 .colors-card-1{
     color: #d04251;
@@ -246,8 +241,18 @@ line-height: 30px;
     font-size: 1.5rem;
     text-align: center;
     margin : 35px 0;
+    line-height: 35px;
+    color: #21b793;
 }
+.title-presentation span{
+    letter-spacing: 4px;
+}
+.maximize{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-decoration: underline;
 
+}
 .cards h4, .cards p, .redirection{
     margin: 5px;
     padding: 5px;
@@ -260,7 +265,7 @@ line-height: 30px;
 .cards > h4{
      text-transform: uppercase;
     letter-spacing: 2px;
-
+text-align: center;
     font-weight: bold;
  }
 
