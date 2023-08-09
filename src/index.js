@@ -31,7 +31,6 @@ function handleScrollTimeLine() {
         layout.style.height = `${fillHeight}px`;
 
 
-
         datePoints.forEach(datePoint => {
             const getHistoryDate = `${datePoint.children[0].textContent.split(" ")[0]}`
             const dateElementToStyle = document.getElementById(getHistoryDate)
@@ -53,16 +52,16 @@ function handleScrollTimeLine() {
                 console.log(fillPercent)
 
 
-                    datePoint.classList.remove('active');
-                    if (!datePoint.classList.contains('active')) {
-                        dateElementToStyle.style.transform = 'translateX(200px)'
-                    }
+                datePoint.classList.remove('active');
+                if (!datePoint.classList.contains('active')) {
+                    dateElementToStyle.style.transform = 'translateX(200px)'
+                }
 
             }
         });
-        if(fillPercent  < 5 ){
-        datePoints[0].classList.remove('active')
-        document.getElementById('1918').style.transform = "translateX(200px)"
+        if (fillPercent < 5) {
+            datePoints[0].classList.remove('active')
+            document.getElementById('1918').style.transform = "translateX(200px)"
         }
 
     }
