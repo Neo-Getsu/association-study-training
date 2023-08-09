@@ -303,14 +303,14 @@ font-family: Poppins;
 
 /* ######### Start Widget part */
 section.widget-part{
-    height: 800px;
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top:  40px;
     background-color: rgba(74, 152, 200, 0.33);
-    position: relative;
     font-family: Poppins, sans-serif;
 }
 .minislide-header {
@@ -366,29 +366,86 @@ margin: 10px 10px;
     height: 60px;
 }
 
+.container-widget{
 
-.date-line {
+    margin-top: 50px;
     width: 300px;
-    height: 2px;
-    background-color: gray;
-    position: relative;
-    margin: 50px auto;
+    height:1500px;
+    display: flex;
+    justify-content: center;
+
+
+    overflow: hidden;
 }
-.date-bullet {
-    width: 10px;
-    height: 10px;
+.widget{
+    width: 5px;
+    height: 90%;
+    background-color: black;
+    position: relative;
+
+}
+.widget > .date-point {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: white;
+    transform: translateX(-45%);
+    color: #000000;
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    transition: background-color 0.3s;
+    margin: auto;
+    display: flex;
+    justify-content: center;align-items: center;
+    transition: background-color, color ease-in-out 0.5s;
+
 }
 
-.date-bullet.active {
-    background-color: blue;
+.layout-fill{
+    background-color: #d04251;
+    width: 100%;
+    height: 0;
+     position:absolute;
+    top: 0;
+    transition: height 0.5s;
+    overflow: hidden;
 }
+
+.date-point > .test{
+    display:block;
+    justify-content: center;
+    width: 170px;
+    text-align: right;
+    position: absolute;
+    padding: 10px;
+    top: 250%;
+    right: -400px;
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    border-radius: 5px;
+    background: #d04251;
+    color: white;
+    box-shadow: -1px 2px 2px rgba(0,0,0,0.5) ;
+    transition:   ease-in-out 1s;
+
+}
+.date-point > .test:last-child{
+    top: 170%;
+}
+
+
+
+footer{
+    margin-top: 50px;
+    background-color: red;
+    height: 150px;
+}
+.date-point.active{
+    background-color: #d04251;
+    color: white;
+    border-radius:25%;
+    transition: ease-in-out 1.2s;
+
+}
+
 
 @media screen and (max-width: 768px) {
     .menu a:hover {
