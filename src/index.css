@@ -898,30 +898,35 @@ p.description::after{
     content: "";
     position: absolute;
     width: 20px;
-    height: 120px;
+    height: 90px;
     background-color: red;
-    transform: rotate(-40deg) translateY(-25%);
-    opacity: 1;
+    transform: rotate(-40deg) translateY(-25%) ;
+    opacity: 0.8;
     box-shadow: 3px 2px 4px -3px #000000;
     top: 0;
     right: 0;
     padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-p.description::before{
+
+p.description::after{
     content: "NEW";
     position: absolute;
-    width: 120px;
+    width:100px;
     height: 20px;
-    transform: rotate(48deg) translateX(30%);
-   top: 0;
-    right: 0;
-    z-index: 15;
-    text-align: center;
-    letter-spacing: 10px;
-    font-size: 18px;
-    padding: 2px;
     font-weight: bold;
+    font-size: 20px;
+    transform: rotate(50deg) translateX(30%) translateY(-30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
 }
+
+
+
 
 
 /*
