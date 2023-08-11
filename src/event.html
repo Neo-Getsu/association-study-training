@@ -46,7 +46,7 @@
                         width=300px"></iframe>
                 <h4 class="colors-card-2"> Jeune & Chercheur</h4>
                 <h5> Programme: </h5>
-                <ul class="program ">
+                <ul class="program">
                     <h5>Lundi, 23 Septembre</h5>
                     <li class="el_prog">
                         <div class="date-details">
@@ -121,26 +121,24 @@
                 </ul>
 
                 <div class="modal">
-                    <dialog id="modal_register" class="">
+                    <dialog class="" id="modal_register">
                         <h4>Inscriptions a l'evenement</h4>
                         <label htmlFor="Nom">Nom</label>
-                        <input type="text" id="Nom">
+                        <input aria-describedby="" id="Nom" placeholder="Dupont" type="text">
                         <label htmlFor="Prenom">Prenom</label>
-                        <input type="text" id="Prenom">
+                        <input aria-describedby="" id="Prenom" placeholder="Jean" type="text">
                         <label htmlFor="tel">Téléphone</label>
-                        <input type="tel" id="tel">
+                        <input id="tel" placeholder="+3375874586" type="tel">
                         <label htmlFor="mail">Email</label>
-                        <input type="mail" id="mail">
+                        <input id="mail" placeholder="jean.dupont@exemple.com" type="mail">
                         <label htmlFor="place">Nombre de place</label>
-                        <input type="number" id="place" max="10" min="1" value="1">
+                        <input id="place" max="10" min="1" type="number" value="1">
 
-                         <button class="btn warn" id="Validation"> Enregistrez</button>
+                        <button class="btn warn" id="Validation"> Enregistrez</button>
                         <button class="btn danger" id="hide">Close</button>
                     </dialog>
-                    <button id="show" class="btn  warn">Inscription</button>
-                    </div>
-
-
+                    <button class="btn  warn" id="show">Inscription</button>
+                </div>
 
 
             </div>
@@ -148,12 +146,52 @@
 
         </div>
 
+        <hr>
+        <div class="container-evt">
 
-    </section>
+            <div class="details">
+                <h3 class="title-presentation colors-card-3">Événement caritatif pour la sensibilisation contre le
+                    cancer</h3>
+                <p>Date: 15 Septembre 2023</p>
+                <p>Lieu: Salle de conférence, Paris France. </p>
+            </div>
 
+            <div class="program">
+                <h3 class="subtitle">Programme: </h3>
 
-    <section class="evt-register">
+                <ul class="program_list">
+                    <li>9h00 - 9h30 : Accueil et enregistrement des participants</li>
+                    <li>9h30 - 10h30 : Conférence sur les avancées en recherche contre le cancer, animée par le Dr.
+                        Marie Dubois
+                    </li>
+                    <li>10h45 - 11h45 : Ateliers interactifs sur les modes de prévention</li>
+                    <li>12h00 - 13h30 : Pause déjeuner</li>
+                    <li>13h45 - 15h00 : Témoignages de survivants et de patients, modéré par le journaliste Marc
+                        Legrand
+                    </li>
+                    <li>15h15 - 16h30 : Séance de yoga et de méditation pour le bien-être</li>
+                </ul>
+            </div>
 
+            <div class="activité">
+                <h3 class="subtitle">Activité propose: </h3>
+                <p class="description">En plus des conférences et des ateliers, l'evenement une zone d'exposition d'organisations
+                    partenaires, une collecte de fonds et une distribution d'informations sur la prévention du
+                    cancer.</p>
+            </div>
+
+            <div class="intervenant">
+                <h3 class="subtitle">Intervenants notables :</h3>
+                <ul class="program_list">
+                    <li> Dr. Marie Dubois - Chercheuse en oncologie</li>
+                    <li> Marc Legrand - Journaliste spécialisé en santé</li>
+                    <li> Emma Martin - Survivante du cancer et activiste</li>
+                    <li> Paul Renaud - Spécialiste en nutrition et prévention</li>
+                </ul>
+
+            </div>
+
+        </div>
 
     </section>
 
