@@ -70,6 +70,28 @@ function handleScrollTimeLine() {
 window.addEventListener('scroll', handleScrollTimeLine);
 
 
+// Modal Part - Event Page
+
+const dialog = document.getElementById("modal_register")
+const showBtn = document.getElementById("show")
+const hideBtn = document.getElementById('hide')
+let modalBtn = [showBtn, hideBtn]
+
+
+
+modalBtn.forEach((btn) => btn.addEventListener('click', handleDisplayModal))
+function handleDisplayModal(e){
+if(e.target.id === 'show'){
+    dialog.show()
+    dialog.classList.add("forModalSettings")
+}
+else {
+    dialog.close()
+    dialog.classList.remove("forModalSettings")
+
+}
+
+}
 
 
 

@@ -263,7 +263,7 @@ section.about-us {
 
 }
 
-.cards h4, .cards p, .redirection {
+.cards h4, .cards p.desc, .redirection {
     margin: 5px;
     padding: 5px;
 }
@@ -688,10 +688,7 @@ main > h1 {
     padding: 10px;
 }
 
-  .register{
-width: 250px;
-height: 40px;
-}
+
 
 .container-evt{
 width: 100%;
@@ -719,37 +716,102 @@ li.el_prog{
     height: 100px;
     align-items: center;
     margin: 10px 0;
-    padding: 5px;
     border-radius: 10px;
     box-shadow: 3px 2px 4px -3px #000000;
     font-size: 0.8rem;
     position: relative;
     overflow: hidden;
+
 }
 
-.hide{
-    display: none;
-}
+
+
 .date-details{
+width: 100%;
+height: 100%;
+line-height: 40px;
 flex: 1;
-padding: 5px;
+padding: 7px;
 text-align: center;
+background-color: #21b793;
+color: #ffffff;
+font-weight: bold;
 }
 
 .date-details::after{
     content:"";
     position: absolute;
-    width: 1px;
+    width: 3px;
     height: 100%;
     top: 0;
     left: 80px;
-    background-color: #9d0404;
+    background-color:#fff;
 }
+
+
 
 .evt-details-info{
     flex: 3;
-    padding: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
     text-align: center;
+    background-color: #4a98c8;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.evt-details-info > p {
+    width: 100%;
+    color: white;
+
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 2px 4px -3px #000000;
+    color: white;
+
+}
+.btn:hover{
+    background-color: #4a98c8;
+}
+
+.warn{
+    background-color: #e87722;
+}
+.danger{
+    background-color: #d04251;
+}
+
+
+
+#modal_register{
+
+border: none;
+height: 300px;
+position: absolute;
+bottom: 20%;
+border-radius: 5px;
+box-shadow: 3px 2px 4px -3px #000000;
+background-color: rgba(128, 128, 128, 0.5);
+margin: 8px;
+backdrop-filter: blur(5px);
+
+}
+
+.forModalSettings{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    transition: all ease-in-out 2s;
 }
 
 /*
