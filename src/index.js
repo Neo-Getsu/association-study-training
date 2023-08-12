@@ -1,4 +1,4 @@
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 
 
@@ -11,6 +11,7 @@ window.addEventListener('resize', () => {
         menu.classList.remove("show")
     }
 })
+
 
 
 const layout = document.querySelector('.layout-fill');
@@ -68,6 +69,8 @@ function handleScrollTimeLine() {
 }
 
 window.addEventListener('scroll', handleScrollTimeLine);
+
+
 
 
 // Modal Part - Event Page

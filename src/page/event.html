@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/8e6f328225.js"></script>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -15,28 +15,24 @@
 <body>
 <header>
     <div class="nav-bar">
-        <div class="brand-title">
-            <img alt="logo" src="https://www.ligue-cancer.net/themes/lncc/logo.png">
+        <div class="brand-title title">
+            <img id="logo" alt="logo" src="https://www.ligue-cancer.net/themes/lncc/logo.png">
             <h1 class="title"> La ligue contre le cancer</h1>
         </div>
         <div class="menu">
-            <a class="" href="index.html">La ligue</a>
-            <a class="active" href="#">Evènement </a>
+            <a  href="index.html">La ligue</a>
+            <a class="active" href="event.html">Evènement </a>
             <a href="#">Contact</a>
         </div>
-        <button class="menu-btn">
+        <button class="hamburger">
             <i class="fa-solid fa-bars"></i>
 
         </button>
     </div>
 </header>
-
-
 <main>
-    <h1> Evènement de la Ligue </h1>
+    <h2 class="title"> Evènement de la Ligue </h2>
     <section class="evt-schedule">
-
-
         <div class="container-evt">
             <div class="cards">
                 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -44,10 +40,9 @@
                         src="https://www.youtube.com/embed/CSUsQBGcFPY"
                         title="Journée Jeunes &amp; Chercheurs 2023"
                         width=300px"></iframe>
-                <h4 class="colors-card-2"> Jeune & Chercheur</h4>
-                <h5> Programme: </h5>
+                <h3 class="subtitle"> Jeune & Chercheur</h3>
                 <ul class="program">
-                    <h5>Lundi, 23 Septembre</h5>
+                    <h4 class="subtitle">Lundi, 23 Septembre</h4>
                     <li class="el_prog">
                         <div class="date-details">
                             <span class="">10h00 à 10h15 </span>
@@ -56,7 +51,7 @@
 
                         <div class="evt-details-info">
 
-                            <p>Café d'accueil des participants</p></div>
+                            <p class="description">Café d'accueil des participants</p></div>
 
                     </li>
 
@@ -67,7 +62,7 @@
                         </div>
 
                         <div class="evt-details-info">
-                            <p>
+                            <p class="description">
                                 Introduction par:
                                 Dr Claude-Agnès REYNAUD, Présidente du Conseil Scientifique National de la Ligue
                             </p>
@@ -82,7 +77,7 @@
                         </div>
 
                         <div class="evt-details-info">
-                            <p>La recherche avance !
+                            <p class="description">La recherche avance !
                                 Six présentations académiques suivies de 5 minutes de questions.
 
                             </p>
@@ -96,7 +91,7 @@
                             <span class="">10h00 à 10h15 </span>
                         </div>
                         <div class="evt-details-info">
-                            <p>
+                            <p class="description">
                                 Présentation de posters suivie d'une évaluation par le jury.
                                 Exploration de l'exposition "Cancers"
                             </p>
@@ -110,7 +105,7 @@
                             <span class="">10h00 à 10h15 </span>
                         </div>
                         <div class="evt-details-info">
-                            <p>Engagés pour guérir !
+                            <p class="description">Engagés pour guérir !
                                 Présentations courtes (3 minutes) de 6 intervenants, suivi par des échanges
                             </p>
 
@@ -134,10 +129,29 @@
                         <label htmlFor="place">Nombre de place</label>
                         <input id="place" max="10" min="1" type="number" value="1">
 
+
+                        <div class="checkbox_container">
+
+                            <div class="checkbox">
+                                <label for="eventOne">Jeux & Chercheurs:</label>
+                                <input type="checkbox" id="eventOne" name="eventOne" value="research_event" checked>
+                            </div>
+
+                            <div class="checkbox">
+                                <label for="eventTwo">Conférence:</label>
+                                <input type="checkbox" id="eventTwo" name="eventTwo" value="conference_event">
+                            </div>
+
+                        </div>
+
+
                         <button class="btn warn" id="Validation"> Enregistrez</button>
                         <button class="btn danger" id="hide">Close</button>
                     </dialog>
-                    <button class="btn  warn" id="show">Inscription</button>
+                    <button class="btn">
+                        <a class="register" href="#show" >Go to Inscription</a>
+                    </button>
+
                 </div>
 
 
@@ -150,10 +164,13 @@
         <div class="container-evt">
 
             <div class="details">
-                <h3 class="title-presentation colors-card-3">Événement caritatif pour la sensibilisation contre le
+                <h3 class="subtitle">Événement caritatif pour la sensibilisation contre le
                     cancer</h3>
-                <p>Date: 15 Septembre 2023</p>
-                <p>Lieu: Salle de conférence, Paris France. </p>
+                <p class="description">Date: 15 Septembre 2023
+                    <br>
+                    Lieu: Salle de conférence, Paris France.
+                </p>
+                <p class="description">  </p>
             </div>
 
             <div class="program">
@@ -175,7 +192,7 @@
 
             <div class="activité">
                 <h3 class="subtitle">Activité propose: </h3>
-                <p class="description">En plus des conférences et des ateliers, l'evenement une zone d'exposition d'organisations
+                <p class="description ruban">En plus des conférences et des ateliers, l'evenement une zone d'exposition d'organisations
                     partenaires, une collecte de fonds et une distribution d'informations sur la prévention du
                     cancer.</p>
             </div>
@@ -192,28 +209,32 @@
             </div>
 
         </div>
-        <button class="btn  warn" >Inscription</button>
+        <button id="show" class="btn" >Inscription</button>
     </section>
-
-
-    <section class="bonus? ">
-
-
-    </section>
-
 
 </main>
+
+
 
 
 <footer>
 
     <div class="footer">
         <p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                     src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                     alt="CSS Valide !" />
+            </a>
+        </p>
     </div>
 
 </footer>
 
-<script src="index.js"></script>
+
+
+
+<script src="../index.js"></script>
 </body>
 </html>
-
