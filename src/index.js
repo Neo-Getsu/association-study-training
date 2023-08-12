@@ -64,7 +64,7 @@ function handleScrollTimeLine() {
                       dateElementToStyle.style.opacity = 1
                   }
                   else if((datePoint.classList.contains('active') && (window.innerWidth <=768))){
-                      dateElementToStyle.style.transform = 'translateX(-500px)'
+                      dateElementToStyle.style.transform = 'translateX(-350px)'
                       dateElementToStyle.style.opacity = 1
                   }
                   else if((datePoint.classList.contains('active') && (window.innerWidth <=1024))){
