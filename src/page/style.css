@@ -269,7 +269,6 @@ section.about-us {
     color: var(--color-wh);
     text-transform: uppercase;
     display: flex;
-    justify-content:center;
     gap: 400px;
     align-items: center;
     }
@@ -650,6 +649,7 @@ button.donate {
     color: var(--color-secondary);
     font-weight: lighter;
     border:1px solid var(--color-secondary);
+    transition: all ease-in-out 500ms;
 
 }
 /*######## === FIN => ${DONATION PART} === ####### */
@@ -1254,7 +1254,7 @@ p.ruban::after{
 /*############## ===  ${SECTION_NAME} === ############## */
 @media screen and (min-width: 1600px){
 
-    button.amount:hover {
+    button.amount:hover, .donate:hover {
        background: var(--color-secondary);
         color: var(--color-primary);
         border: var(--color-primary);
