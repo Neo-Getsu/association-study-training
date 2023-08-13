@@ -259,7 +259,6 @@ section.about-us {
     background-size:cover ;
     background-position: center;
     position: relative;
-
 }
 
 
@@ -267,36 +266,23 @@ section.about-us {
     width: 100%;
     height: 50px;
     background-color: var(--color-primary);
-
     color: var(--color-wh);
     text-transform: uppercase;
     display: flex;
     justify-content:center;
     gap: 400px;
     align-items: center;
-    overflow: hidden;
-
-
-}
-.bande-passante   p{
-
-
-animation: defilement 20s linear  infinite;
-
-
-}
-
-
-@keyframes defilement {
-    0% {
-        transform: translateX(100%);
     }
 
-    100% {
-        transform: translateX(-800%);
-    }
+ main > h2.margtop{
+    line-height: 100px;
+ }
 
-}
+
+
+
+
+
 
 .presentation {
     width: 300px;
@@ -608,8 +594,9 @@ button.amount {
     height: 40px;
     border-radius: 5px;
     text-align: center;
-
+    transition: all ease-in-out 500ms;
 }
+
 .style_form{
     font-size: 1.0rem;
     background-color: var(--color-primary);
@@ -1267,6 +1254,13 @@ p.ruban::after{
 /*############## ===  ${SECTION_NAME} === ############## */
 @media screen and (min-width: 1600px){
 
+    button.amount:hover {
+       background: var(--color-secondary);
+        color: var(--color-primary);
+        border: var(--color-primary);
+        cursor: pointer;
+        font-weight: bold;
+    }
 
 
     nav a {
