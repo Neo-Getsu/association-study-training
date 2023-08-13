@@ -34,7 +34,7 @@ body {
     height: 100vh;
 }
 
-ol, ul {
+ol, ul, li {
     list-style: none;
 }
 
@@ -52,7 +52,13 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+button.btn {
+    cursor: pointer;
+    opacity:0.75 ;
+}
+button.btn:hover{
+    opacity:1
+}
 /*############## ===  ${VARIABLE CSS /BASE SEMENTIQUE} === ############## */
 :root {
     --bg-primary: #DFF6FF;
@@ -182,6 +188,7 @@ header > .nav-bar {
     padding: 10px;
     box-shadow: var(--shadow-nav);
     background-color: var(--color-primary);
+
 }
 
 .nav-bar img {
@@ -260,13 +267,36 @@ section.about-us {
     width: 100%;
     height: 50px;
     background-color: var(--color-primary);
-    padding: 5px;
+
     color: var(--color-wh);
     text-transform: uppercase;
     display: flex;
+    justify-content:center;
+    gap: 400px;
     align-items: center;
+    overflow: hidden;
+
+
+}
+.bande-passante   p{
+
+
+animation: defilement 20s linear  infinite;
+
+
 }
 
+
+@keyframes defilement {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-800%);
+    }
+
+}
 
 .presentation {
     width: 300px;
@@ -1156,7 +1186,7 @@ p.ruban::after{
 
 
     a.active {
-        border-bottom: solid 1px var(--color-secondary);
+
 
     }
 
@@ -1232,3 +1262,64 @@ p.ruban::after{
     }
 }
 /*######## === FIN => ${MEDIA SCREEN <= 1440} === ####### */
+
+
+/*############## ===  ${SECTION_NAME} === ############## */
+@media screen and (min-width: 1600px){
+
+
+
+    nav a {
+        color: inherit;
+        opacity: 0.7;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        position: relative;
+    }
+    nav li{
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav li::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0.2rem;
+        height: 0.2rem;
+        width: 100%;
+        background: var(--color-secondary);
+
+        translate: var(--_translate, 0);
+        scale:var(--_width,0) 1;
+        transition:
+                scale 300ms var(--_scale-delay ),
+                translate 500ms var(--_translate-delay );
+    }
+
+
+
+    nav li:hover, nav li:focus-within , a.active  {
+        --_width:1;
+        opacity: 1;
+    }
+
+    @supports selector(:has(h1)) {
+
+        nav li:hover + li {
+            --_translate:-100%;
+            --_scale-delay: 300ms;
+            --_translate-delay:200ms;
+        }
+
+        nav li:has(+ :hover){
+            --_translate:100%;
+            --_scale-delay: 300ms;
+            --_translate-delay:200ms;
+        }
+    }
+
+}
+/*######## === FIN => ${SECTION_NAME} === ####### */

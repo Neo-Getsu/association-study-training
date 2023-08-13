@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="animated.css" rel="stylesheet" type="text/css">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/8e6f328225.js"></script>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -19,11 +20,16 @@
             <img id="logo" alt="logo" src="https://www.ligue-cancer.net/themes/lncc/logo.png">
             <h1 class="title"> La ligue contre le cancer</h1>
         </div>
-        <div class="menu">
-            <a  href="index.html">La ligue</a>
-            <a class="active" href="event.html">Evènement </a>
-            <a href="#">Contact</a>
-        </div>
+        <nav>
+            <ul class="menu">
+                <li> <a  href="index.html">La ligue</a></li>
+                <li><a class="active" href="event.html">Evènement </a> </li>
+                <li><a href="#"> Actualité</a> </li>
+                <li><a href="#">Location </a> </li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
         <button class="hamburger">
             <i class="fa-solid fa-bars"></i>
 
@@ -209,7 +215,13 @@
             </div>
 
         </div>
-        <button id="show" class="btn" >Inscription</button>
+        <button id="show" class="button glow-effect">
+            Inscription
+            <svg class="glow-container">
+                <rect  pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+                <rect  pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+            </svg>
+        </button>
     </section>
 
 </main>
