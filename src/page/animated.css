@@ -6,20 +6,21 @@
     --color-wh: #f4ebe3;
     --sm-width: 300px;
     --lg-width: 700px;
-    --shadow-nav:1px 2px 2px rgba(0, 0, 0, 0.3);
+    --shadow-nav: 1px 2px 2px rgba(0, 0, 0, 0.3);
     --shadow-box: 2px 1px 8px -2px #1A1418;
 }
 
-.button{
+.button {
     cursor: pointer;
     font-size: 2rem;
     font-family: inherit;
     font-weight: 700;
     border: 0;
     padding: 0.75em 1.25em;
-    border-radius:var(--glow-radius);
+    border-radius: var(--glow-radius);
 }
-.glow-effect{
+
+.glow-effect {
     --glow-line-color: var(--color-secondary);
     --glow-line-thickness: 3px;
     --glow-blur-color: var(--bg-primary);
@@ -27,18 +28,18 @@
     --animation-speed: 1500ms;
     --glow-line-length: 20px;
     --glow-radius: 0.50rem;
-    --glow-offset:10px;
+    --glow-offset: 10px;
     /* do not change use for calcul */
     --container-offset: 50px;
     position: relative;
 
 }
 
-.glow-container{
+.glow-container {
     pointer-events: none;
     position: absolute;
-    width: calc(100% + var(--container-offset) );
-    height: calc(100% + var(--container-offset) );
+    width: calc(100% + var(--container-offset));
+    height: calc(100% + var(--container-offset));
     inset: calc(var(--container-offset) / -2);
     opacity: 0;
 
@@ -46,53 +47,56 @@
 }
 
 .glow-blur,
-.glow-line{
+.glow-line {
     width: calc(100% - var(--container-offset) + var(--glow-offset));
     height: calc(100% - var(--container-offset) + var(--glow-offset));
     x: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
     y: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
-    rx:var(--glow-radius);
+    rx: var(--glow-radius);
     fill: transparent;
-    stroke-width:5px ;
+    stroke-width: 5px;
     stroke: black;
     /*line effect width */
-    stroke-dasharray: var(--glow-line-length) calc(50px - var(--glow-line-length))  ;
+    stroke-dasharray: var(--glow-line-length) calc(50px - var(--glow-line-length));
 
 }
 
 .glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
     stroke-dashoffset: -80px;
-    transition:
-            stroke-dashoffset
-            var(--animation-speed)
-            ease-in;
+    transition: stroke-dashoffset var(--animation-speed) ease-in;
 }
+
 .glow-effect:is(:hover, :focus) .glow-container {
-    animation:  glow-visibility ease-in-out var(--animation-speed);
+    animation: glow-visibility ease-in-out var(--animation-speed);
 }
 
 
-.glow-blur{
+.glow-blur {
     filter: blur(var(--glow-blur-size));
-    stroke:var(--glow-blur-color);
+    stroke: var(--glow-blur-color);
     stroke-width: var(--glow-blur-size);
 }
 
-.glow-line{
-    stroke:var(--glow-line-color);
+.glow-line {
+    stroke: var(--glow-line-color);
     stroke-width: var(--glow-line-thickness);
 }
 
 
-@keyframes glow-visibility{
-    0%, 100% { opacity: 0}
-    25%, 75% { opacity: 1}
+@keyframes glow-visibility {
+    0%, 100% {
+        opacity: 0
+    }
+    25%, 75% {
+        opacity: 1
+    }
 
 }
 
-.glow-effect[data-glow-animation="false"]{
+.glow-effect[data-glow-animation="false"] {
     --glow-line-length: 50px;
 }
-.glow-effect[data-glow-offset="true"]{
+
+.glow-effect[data-glow-offset="true"] {
     --glow-offset: 20px;
 }

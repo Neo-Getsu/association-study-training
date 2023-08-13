@@ -52,13 +52,16 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 button.btn {
     cursor: pointer;
-    opacity:0.75 ;
+    opacity: 0.75;
 }
-button.btn:hover{
-    opacity:1
+
+button.btn:hover {
+    opacity: 1
 }
+
 /*############## ===  ${VARIABLE CSS /BASE SEMENTIQUE} === ############## */
 :root {
     --bg-primary: #DFF6FF;
@@ -68,46 +71,54 @@ button.btn:hover{
     --color-wh: #f4ebe3;
     --sm-width: 300px;
     --lg-width: 700px;
-    --shadow-nav:1px 2px 2px rgba(0, 0, 0, 0.3);
+    --shadow-nav: 1px 2px 2px rgba(0, 0, 0, 0.3);
     --shadow-box: 2px 1px 8px -2px #1A1418;
 }
-h1{
+
+h1 {
     font-size: 1.4rem;
     line-height: 20px;
 }
-h2{
+
+h2 {
     font-size: 1.3rem;
 }
-h3{
+
+h3 {
     font-size: 1.1rem;
 }
-h4{
+
+h4 {
     font-size: 1.0rem;
 }
-p, a{
+
+p, a {
     font-size: 0.9rem;
 }
 
 
-body{
+body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh ;
+    height: 100vh;
     background-color: var(--bg-primary);
 }
-img{
+
+img {
     width: 60px;
     height: 60px;
 }
 
-header{
+header {
     height: 40px;
     z-index: 10;
 }
-svg{
+
+svg {
     color: var(--color-wh);
 }
+
 footer {
 
     background-color: var(--color-primary);
@@ -121,35 +132,40 @@ footer {
 /*######## === FIN => ${VARIABLE CSS/BASE SEMENTIQUE} === ####### */
 
 
-
 /*############## ===  ${Custom générique classes} === ############## */
-.title{
-margin: 10px auto;
-padding: 5px;
-text-transform: uppercase;
-font-weight: bold;
-color: var(--color-wh);
+.title {
+    margin: 10px auto;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-wh);
 }
-.subtitle{
-margin: 10px auto;
+
+.subtitle {
+    margin: 10px auto;
 }
-.description{
-padding: 5px;
-text-align: left;
-line-height: 21px;
+
+.description {
+    padding: 5px;
+    text-align: left;
+    line-height: 21px;
 }
-.title-colors{
+
+.title-colors {
     color: var(--color-secondary);
 }
-.spanTitleColors{
+
+.spanTitleColors {
     color: var(--color-primary);
 }
+
 .maximize {
     text-transform: capitalize;
     letter-spacing: 2px;
     text-decoration: underline;
 }
-.btn{
+
+.btn {
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -157,10 +173,13 @@ line-height: 21px;
     border: none;
     border-radius: 5px;
     box-shadow: var(--shadow-box);
-
-
 }
 
+
+span.output{
+    font-weight: bold;
+
+}
 /*######## === FIN => ${Custom générique classes} === ####### */
 
 
@@ -220,6 +239,7 @@ header > .nav-bar {
     box-shadow: var(--shadow-nav);
     z-index: 2;
 }
+
 .menu a {
     display: block;
     margin: 0;
@@ -229,13 +249,14 @@ header > .nav-bar {
     color: var(--color-wh);
     font-weight: bold;
 }
-.menu a:visited{
+
+.menu a:visited {
     color: var(--color-wh);
 }
 
 /*######## === FIN => ${HEADER} === ####### */
 
-main{
+main {
     position: relative;
     width: 100%;
 }
@@ -256,7 +277,7 @@ section.about-us {
     height: 400px;
     align-items: end;
     background-image: url("https://www.ligue-cancer.net/sites/default/files/media/images/2023-07/amour-ligue_desktop-.jpg");
-    background-size:cover ;
+    background-size: cover;
     background-position: center;
     position: relative;
 }
@@ -271,16 +292,11 @@ section.about-us {
     display: flex;
     gap: 400px;
     align-items: center;
-    }
+}
 
- main > h2.margtop{
+main > h2.margtop {
     line-height: 100px;
- }
-
-
-
-
-
+}
 
 
 .presentation {
@@ -290,10 +306,11 @@ section.about-us {
     align-items: center;
     margin: 10px;
 }
-.cards > img{
+
+.cards > img {
     width: 100%;
     height: 100%;
-    transition: transform  ease-in-out 0.5s;
+    transition: transform ease-in-out 0.5s;
 }
 
 .vignette {
@@ -305,6 +322,7 @@ section.about-us {
     border-top-left-radius: 10px;
     color: var(--color-secondary);
 }
+
 .cards > h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -337,8 +355,9 @@ section.about-us {
     transform: translateX(-55%);
     width: 180px;
     height: 1px;
-    background-color:var(--color-secondary);
+    background-color: var(--color-secondary);
 }
+
 /*######## === FIN => ${PRESENTATION LIGUE SECTION - 1} === ####### */
 
 
@@ -382,7 +401,7 @@ section.widget-part {
     align-content: center;
     justify-content: center;
     background-color: var(--color-primary);
-    color:var(--color-wh);
+    color: var(--color-wh);
     border-radius: 5px;
     font-weight: 500;
     box-shadow: var(--shadow-nav);
@@ -431,7 +450,7 @@ section.widget-part {
 }
 
 .layout-fill {
-    background-color:var(--bg-secondary);
+    background-color: var(--bg-secondary);
     width: 100%;
     height: 0;
     position: absolute;
@@ -439,34 +458,38 @@ section.widget-part {
     transition: height 0.5s;
     overflow: hidden;
 }
+
 .date-point > .wid-details {
     display: block;
     justify-content: center;
-    width:230px;
+    width: 230px;
     position: absolute;
     padding: 10px;
     top: 200%;
     right: -425px;
     border-radius: 5px;
-    background-color:var(--bg-secondary);
+    background-color: var(--bg-secondary);
     color: var(--color-wh);
     box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.5);
     transition: all ease-in-out 0.5s;
 }
-.wid-details > p.description{
+
+.wid-details > p.description {
     font-weight: lighter;
     text-align: right;
 }
+
 .date-point:last-child > div.wid-details:last-child {
-  top: 70%;
+    top: 70%;
 }
-.date-point.active:last-child{
-   height: 80px;
+
+.date-point.active:last-child {
+    height: 80px;
     border-radius: 10px;
 }
 
 .date-point.active {
-    background-color:var(--bg-secondary);
+    background-color: var(--bg-secondary);
     border-radius: 25%;
     transition: all ease-in-out 0.5s;
 }
@@ -484,7 +507,8 @@ section.widget-part {
     align-items: center;
     gap: 40px;
 }
-.header-donations  > h2, .header-donations >p {
+
+.header-donations > h2, .header-donations > p {
     color: var(--bg-secondary);
     text-align: center;
     margin: 25px auto;
@@ -494,8 +518,8 @@ section.widget-part {
 .donation-form {
     width: 300px;
     height: 700px;
-    box-shadow: var(--shadow-box) ;
-     background: var(--color-primary);
+    box-shadow: var(--shadow-box);
+    background: var(--color-primary);
     color: var(--color-wh);
     display: flex;
     flex-direction: column;
@@ -516,7 +540,7 @@ section.widget-part {
     position: relative;
     width: 100%;
     height: 130px;
-    background-color:var(--color-primary);
+    background-color: var(--color-primary);
     box-shadow: var(--shadow-nav);
 }
 
@@ -563,11 +587,13 @@ section.widget-part {
     left: 0;
     transform: translateX(50%);
 }
+
 .monthly.active::after {
     right: 0;
     transform: translateX(-50%);
 
 }
+
 .forms-header > img {
     width: 60px;
     height: 60px;
@@ -596,17 +622,25 @@ button.amount {
     transition: all ease-in-out 500ms;
 }
 
-.style_form{
+button.amount:hover, .donate:hover {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    border: var(--color-primary);
+    cursor: pointer;
+    font-weight: bold;
+}
+.style_form {
     font-size: 1.0rem;
     background-color: var(--color-primary);
     color: var(--color-secondary);
     border: var(--color-secondary) 1px solid;
 }
+
 #amount {
     height: 40px;
     width: 270px;
     border-radius: 5px;
-    outline:none;
+    outline: none;
 }
 
 .legalmention {
@@ -641,18 +675,20 @@ small {
 }
 
 .donation button, .donation input {
-    box-shadow:var(--shadow-box);
+    box-shadow: var(--shadow-box);
 }
 
 button.donate {
-    background-color:var(--color-primary);
+    background-color: var(--color-primary);
     color: var(--color-secondary);
     font-weight: lighter;
-    border:1px solid var(--color-secondary);
+    border: 1px solid var(--color-secondary);
     transition: all ease-in-out 500ms;
 
 }
+
 /*######## === FIN => ${DONATION PART} === ####### */
+
 
 
 /* ################################### */
@@ -660,7 +696,7 @@ button.donate {
 /* ################################### */
 
 
-.evt-schedule{
+.evt-schedule {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -670,6 +706,7 @@ button.donate {
 
 
 }
+
 main > h2.title {
     color: var(--bg-secondary);
     margin: 30px 0;
@@ -677,16 +714,16 @@ main > h2.title {
     text-align: center;
 }
 
-.container-evt{
+.container-evt {
     width: 100%;
 }
 
-.cards > h4{
+.cards > h4 {
     font-weight: bold;
     text-transform: uppercase;
 }
 
-ul.program{
+ul.program {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -695,12 +732,12 @@ ul.program{
 
 .program > h4 {
     margin: 10px auto;
-    text-decoration:  underline;
+    text-decoration: underline;
     font-weight: bold;
     color: var(--bg-secondary);
 }
 
-li.el_prog{
+li.el_prog {
     display: flex;
     height: 100px;
     align-items: center;
@@ -712,7 +749,7 @@ li.el_prog{
 
 }
 
-.date-details{
+.date-details {
     width: 100%;
     height: 100%;
     flex: 1;
@@ -725,19 +762,18 @@ li.el_prog{
     font-weight: bold;
 }
 
-.date-details::after{
-    content:"";
+.date-details::after {
+    content: "";
     position: absolute;
     width: 3px;
     height: 100%;
     top: 0;
     left: 80px;
-    background-color:var(--color-wh);
+    background-color: var(--color-wh);
 }
 
 
-
-.evt-details-info{
+.evt-details-info {
     flex: 3;
     height: 100%;
     display: flex;
@@ -754,14 +790,12 @@ li.el_prog{
 
 }
 
-.btn > a.register{
+.btn > a.register {
     text-decoration: none;
 }
 
 
-
-
-#modal_register{
+#modal_register {
 
     border: none;
     width: 280px;
@@ -769,7 +803,7 @@ li.el_prog{
     position: absolute;
     bottom: 0;
     border-radius: 5px;
-    box-shadow:var(--shadow-box);
+    box-shadow: var(--shadow-box);
     background-color: rgba(128, 128, 128, 0.5);
     margin: 8px auto;
     backdrop-filter: blur(5px);
@@ -777,7 +811,8 @@ li.el_prog{
     color: var(--color-wh);
 
 }
-.evt-schedule > button, .modal > button, .btn > a.register{
+
+.evt-schedule > button, .modal > button, .btn > a.register {
     background-color: var(--color-secondary);
     color: var(--bg-primary);
     font-size: 18px;
@@ -785,7 +820,7 @@ li.el_prog{
     font-weight: bold;
 }
 
-.checkbox_container{
+.checkbox_container {
 
     padding: 10px;
     display: flex;
@@ -795,6 +830,7 @@ li.el_prog{
 
 
 }
+
 .checkbox_container .checkbox > label {
     font-size: 0.8rem;
     font-weight: lighter;
@@ -803,16 +839,18 @@ li.el_prog{
     text-transform: uppercase;
     color: var(--color-wh);
 }
-.checkbox_container .checkbox > input[type="checkbox"]{
+
+.checkbox_container .checkbox > input[type="checkbox"] {
     width: 20px;
     height: 20px;
-   }
+}
 
-.checkbox{
+.checkbox {
     display: flex;
     align-items: center;
 }
-.forModalSettings{
+
+.forModalSettings {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -820,14 +858,16 @@ li.el_prog{
     align-items: center;
     transition: all ease-in-out 0.5s;
 }
-.modal > dialog > label{
+
+.modal > dialog > label {
 
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 2px;
-    margin : 10px auto;
+    margin: 10px auto;
 }
-dialog > h4{
+
+dialog > h4 {
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: underline;
@@ -838,17 +878,18 @@ dialog > h4{
 #tel, #Nom, #Prenom, #mail, #place {
     height: 20px;
     width: 100%;
-    border:none;
+    border: none;
     border-radius: 5px;
     padding: 10px;
 }
-#place{
+
+#place {
     width: 30%;
     text-align: center;
 
 }
 
-.details, .program, .intervenant, .activité{
+.details, .program, .intervenant, .activité {
     margin: 15px auto;
     display: block;
     font-size: 12px;
@@ -856,7 +897,7 @@ dialog > h4{
     z-index: 5;
 }
 
-.container-evt  h3.subtitle{
+.container-evt h3.subtitle {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -864,8 +905,7 @@ dialog > h4{
 }
 
 
-
-.program_list{
+.program_list {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -878,19 +918,19 @@ dialog > h4{
 
 }
 
-.program_list li{
+.program_list li {
     padding: 10px 0;
     width: 250px;
     margin: 0 10px;
     border-radius: 5px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
 
 }
 
-.activité > p.description{
+.activité > p.description {
     font-size: 0.8rem;
     background-color: var(--color-secondary);
     padding: 10px;
@@ -901,13 +941,14 @@ dialog > h4{
     position: relative;
     overflow: hidden;
 }
-p.ruban::after{
+
+p.ruban::after {
     content: "";
     position: absolute;
     width: 20px;
     height: 90px;
     background-color: red;
-    transform: rotate(-40deg) translateY(-25%) ;
+    transform: rotate(-40deg) translateY(-25%);
     opacity: 0.75;
     box-shadow: var(--shadow-box);
     top: 0;
@@ -918,10 +959,10 @@ p.ruban::after{
     align-items: center;
 }
 
-p.ruban::after{
+p.ruban::after {
     content: "NEW";
     position: absolute;
-    width:100px;
+    width: 100px;
     height: 20px;
     font-weight: bold;
     font-size: 20px;
@@ -933,22 +974,18 @@ p.ruban::after{
     color: var(--color-secondary);
 }
 
-#Validation{
+#Validation {
     background-color: #21b793;
     color: white;
 
 }
-#hide{
+
+#hide {
     background-color: #d04251;
     color: white;
 
 
 }
-
-
-
-
-
 
 
 /*############## ===  ${MEDIA SCEEN <= 768px} === ############## */
@@ -958,15 +995,16 @@ p.ruban::after{
         padding: 15px;
     }
 
-   #logo{
-        width:50px;
-        height:50px;
-       box-shadow: var(--shadow-nav);
+    #logo {
+        width: 50px;
+        height: 50px;
+        box-shadow: var(--shadow-nav);
     }
-   div > h2.title{
-       text-align: center;
-       margin-top:25px;
-   }
+
+    div > h2.title {
+        text-align: center;
+        margin-top: 25px;
+    }
 
     /*############## Presnetation page  */
     .presentation {
@@ -980,8 +1018,9 @@ p.ruban::after{
         justify-items: center;
         margin: 0;
     }
-    .cards:last-child{
-      width: 50%;
+
+    .cards:last-child {
+        width: 50%;
         text-align: center;
         justify-content: center;
         grid-column-end: span 2;
@@ -998,6 +1037,7 @@ p.ruban::after{
     .presentation .cards p {
         text-align: justify;
     }
+
     .cards .redirection a {
         width: 100%;
         text-align: center;
@@ -1038,36 +1078,39 @@ p.ruban::after{
         right: -450px;
         text-align: center;
     }
-.donation-form{
-    width: 400px;
-}
+
+    .donation-form {
+        width: 400px;
+    }
 
 
     .monthly.active::after, .onetime.active::after {
         width: 100px;
     }
-    .evt-schedule{
+
+    .evt-schedule {
         width: 700px;
     }
 
 
-    .cards > iframe{
+    .cards > iframe {
         width: 100%;
         height: 400px;
     }
 
-    li.el_prog{
+    li.el_prog {
         width: 100%;
         margin: 20px auto;
     }
+
     .date-details::after {
         left: 180px;
     }
 
     #modal_register {
         border: none;
-        width:500px;
-        height:500px;
+        width: 500px;
+        height: 500px;
         position: absolute;
         bottom: 0;
         margin: 10px auto;
@@ -1080,7 +1123,7 @@ p.ruban::after{
         font-size: 18px;
     }
 
-    .date-details{
+    .date-details {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1090,53 +1133,61 @@ p.ruban::after{
     /* ################################### */
     /* ########## EVENT PAGE ############# */
     /* ################################### */
-
-    .evt-schedule{
+    .evt-schedule {
         width: 700px;
     }
-    .evt-schedule > .cards{
+
+    .evt-schedule > .cards {
         width: 100%;
     }
-    .evt-schedule > .container-evt > .cards:last-child{
+
+    .evt-schedule > .container-evt > .cards:last-child {
         width: 100%;
     }
-    .container-evt h3.subtitle{
+
+    .container-evt h3.subtitle {
         font-size: 1.5rem;
     }
- .program > .program_list,  .intervenant >.program_list{
-    font-size: 0.9rem;
-    background-image:url('https://www.ligue-cancer.net/sites/default/files/styles/large/public/media/icons/2023-07/adobestock_602856061-.jpeg?itok=grPhAfiB') ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: 350%;
-    background-blend-mode: screen;
-     z-index: 150;
 
-}
- .intervenant >.program_list{
-        background-position-x:-10% ;
-        align-items: flex-end;
-     background-image:url('https://www.ligue-cancer.net/sites/default/files/styles/large/public/media/icons/2023-07/adobestock_236237463-.jpeg?itok=npHFpaTj') ;
+    .program > .program_list, .intervenant > .program_list {
+        font-size: 0.9rem;
+        background-image: url('https://www.ligue-cancer.net/sites/default/files/styles/large/public/media/icons/2023-07/adobestock_602856061-.jpeg?itok=grPhAfiB');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 350%;
+        background-blend-mode: screen;
+        z-index: 150;
+
     }
-    #modal_register{
+
+    .intervenant > .program_list {
+        background-position-x: -10%;
+        align-items: flex-end;
+        background-image: url('https://www.ligue-cancer.net/sites/default/files/styles/large/public/media/icons/2023-07/adobestock_236237463-.jpeg?itok=npHFpaTj');
+    }
+
+    #modal_register {
         width: 600px;
         height: 650px;
         margin: 8px auto;
     }
+
     #tel, #Nom, #Prenom, #mail, #place {
         height: 20px;
         width: 70%;
 
     }
-    #place{
+
+    #place {
         width: 30%;
         text-align: center;
-}
+    }
 
-    .checkbox_container .checkbox > label{
+    .checkbox_container .checkbox > label {
         font-size: 1.1rem;
     }
 }
+
 /*######## === FIN => ${MEDIA SCEEN <= 768px} === ####### */
 
 /*############## ===  ${MEDIA SCREEN <= 1024} === ############## */
@@ -1171,7 +1222,6 @@ p.ruban::after{
     }
 
 
-
     a.active {
 
 
@@ -1202,19 +1252,21 @@ p.ruban::after{
         width: auto;
         grid-row-start: span 1;
         grid-column-start: span 1;
-}
+    }
+
     .container-ressources {
         width: 1000px;
         height: 200px;
-}
+    }
+
     .container-widget {
         width: 600px;
-}
+    }
 
     .date-point > .wid-details {
         width: 450px;
         right: -800px;
-     }
+    }
 
 }
 
@@ -1223,9 +1275,10 @@ p.ruban::after{
 /*############## ===  ${MEDIA SCREEN <= 1440} === ############## */
 @media screen and (min-width: 1440px) {
 
-   .cards > h3 {
-        margin-top:50px;
+    .cards > h3 {
+        margin-top: 50px;
     }
+
     .cards > p {
         font-size: 18px;
         margin: 30px;
@@ -1244,23 +1297,19 @@ p.ruban::after{
         width: 1300px;
         height: 200px;
     }
-    .program_list{
+
+    .program_list {
         padding: 5px;
     }
 }
+
 /*######## === FIN => ${MEDIA SCREEN <= 1440} === ####### */
 
 
 /*############## ===  ${SECTION_NAME} === ############## */
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1600px) {
 
-    button.amount:hover, .donate:hover {
-       background: var(--color-secondary);
-        color: var(--color-primary);
-        border: var(--color-primary);
-        cursor: pointer;
-        font-weight: bold;
-    }
+
 
 
     nav a {
@@ -1271,13 +1320,14 @@ p.ruban::after{
         font-weight: 500;
         position: relative;
     }
-    nav li{
+
+    nav li {
 
         position: relative;
         overflow: hidden;
     }
 
-    nav li::after{
+    nav li::after {
         content: "";
         position: absolute;
         left: 0;
@@ -1287,33 +1337,32 @@ p.ruban::after{
         background: var(--color-secondary);
 
         translate: var(--_translate, 0);
-        scale:var(--_width,0) 1;
-        transition:
-                scale 300ms var(--_scale-delay ),
-                translate 500ms var(--_translate-delay );
+        scale: var(--_width, 0) 1;
+        transition: scale 300ms var(--_scale-delay),
+        translate 500ms var(--_translate-delay);
     }
 
 
-
-    nav li:hover, nav li:focus-within , a.active  {
-        --_width:1;
+    nav li:hover, nav li:focus-within, a.active {
+        --_width: 1;
         opacity: 1;
     }
 
     @supports selector(:has(h1)) {
 
         nav li:hover + li {
-            --_translate:-100%;
+            --_translate: -100%;
             --_scale-delay: 300ms;
-            --_translate-delay:200ms;
+            --_translate-delay: 200ms;
         }
 
-        nav li:has(+ :hover){
-            --_translate:100%;
+        nav li:has(+ :hover) {
+            --_translate: 100%;
             --_scale-delay: 300ms;
-            --_translate-delay:200ms;
+            --_translate-delay: 200ms;
         }
     }
 
 }
+
 /*######## === FIN => ${SECTION_NAME} === ####### */

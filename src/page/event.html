@@ -17,16 +17,16 @@
 <header>
     <div class="nav-bar">
         <div class="brand-title title">
-            <img id="logo" alt="logo" src="https://www.ligue-cancer.net/themes/lncc/logo.png">
+            <img alt="logo" id="logo" src="https://www.ligue-cancer.net/themes/lncc/logo.png">
             <h1 class="title"> La ligue contre le cancer</h1>
         </div>
         <nav>
             <ul class="menu">
-                <li> <a  href="index.html">La ligue</a></li>
-                <li><a class="active" href="event.html">Evènement </a> </li>
-                <li><a href="#"> Actualité</a> </li>
-                <li><a href="#">Location </a> </li>
-                <li> <a href="#">Contact</a></li>
+                <li><a href="index.html">La ligue</a></li>
+                <li><a class="active" href="event.html">Evènement </a></li>
+                <li><a href="#"> Actualité</a></li>
+                <li><a href="#">Location </a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
 
@@ -140,12 +140,12 @@
 
                             <div class="checkbox">
                                 <label for="eventOne">Jeux & Chercheurs:</label>
-                                <input type="checkbox" id="eventOne" name="eventOne" value="research_event" checked>
+                                <input checked id="eventOne" name="eventOne" type="checkbox" value="research_event">
                             </div>
 
                             <div class="checkbox">
                                 <label for="eventTwo">Conférence:</label>
-                                <input type="checkbox" id="eventTwo" name="eventTwo" value="conference_event">
+                                <input id="eventTwo" name="eventTwo" type="checkbox" value="conference_event">
                             </div>
 
                         </div>
@@ -155,7 +155,7 @@
                         <button class="btn danger" id="hide">Close</button>
                     </dialog>
                     <button class="btn">
-                        <a class="register" href="#show" >Go to Inscription</a>
+                        <a class="register" href="#show">Go to Inscription</a>
                     </button>
 
                 </div>
@@ -176,7 +176,7 @@
                     <br>
                     Lieu: Salle de conférence, Paris France.
                 </p>
-                <p class="description">  </p>
+                <p class="description"></p>
             </div>
 
             <div class="program">
@@ -198,7 +198,8 @@
 
             <div class="activité">
                 <h3 class="subtitle">Activité propose: </h3>
-                <p class="description ruban">En plus des conférences et des ateliers, l'evenement une zone d'exposition d'organisations
+                <p class="description ruban">En plus des conférences et des ateliers, l'evenement une zone d'exposition
+                    d'organisations
                     partenaires, une collecte de fonds et une distribution d'informations sur la prévention du
                     cancer.</p>
             </div>
@@ -215,18 +216,16 @@
             </div>
 
         </div>
-        <button id="show" class="button glow-effect">
+        <button class="button glow-effect" id="show">
             Inscription
             <svg class="glow-container">
-                <rect  pathLength="100" stroke-linecap="round" class="glow-line"></rect>
-                <rect  pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+                <rect class="glow-line" pathLength="100" stroke-linecap="round"></rect>
+                <rect class="glow-blur" pathLength="100" stroke-linecap="round"></rect>
             </svg>
         </button>
     </section>
 
 </main>
-
-
 
 
 <footer>
@@ -235,16 +234,14 @@
         <p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
         <p>
             <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
+                <img alt="CSS Valide !"
                      src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                     alt="CSS Valide !" />
+                     style="border:0;width:88px;height:31px"/>
             </a>
         </p>
     </div>
 
 </footer>
-
-
 
 
 <script src="../index.js"></script>
