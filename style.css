@@ -76,7 +76,7 @@ button.btn:hover {
 }
 
 h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 20px;
 }
 
@@ -293,6 +293,9 @@ section.about-us {
     gap: 400px;
     align-items: center;
 }
+p.defil-text{
+    padding: 10px;
+}
 
 main > h2.margtop {
     line-height: 100px;
@@ -426,7 +429,7 @@ opacity: 1;
 .container-widget {
     margin-top: 50px;
     width: 300px;
-    height: 1500px;
+    height: 1600px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -994,6 +997,19 @@ p.ruban::after {
 
 }
 
+/*######## === FIN => ${MEDIA SCEEN <= 375px} === ####### */
+@media screen and (min-width: 375px) {
+    .presentation{
+        margin: auto;
+    }
+
+
+    .redirection a::after{
+        transform: translateX(-55%);
+    }
+}
+
+
 
 /*############## ===  ${MEDIA SCEEN <= 768px} === ############## */
 @media screen and (min-width: 768px) {
@@ -1057,7 +1073,7 @@ p.ruban::after {
         bottom: -1px;
         left: 50%;
         transform: translateX(-50%);
-        width: 200px;
+        width: 300px;
         height: 2px;
     }
 
@@ -1195,7 +1211,6 @@ p.ruban::after {
     }
 }
 
-/*######## === FIN => ${MEDIA SCEEN <= 768px} === ####### */
 
 /*############## ===  ${MEDIA SCREEN <= 1024} === ############## */
 
@@ -1242,12 +1257,13 @@ p.ruban::after {
     }
 
     .cards > .redirection > a {
-        font-size: 15px;
+        font-size: 13px;
 
     }
 
     .redirection a::after {
-        width: 200px;
+        width:280px;
+
     }
 
     /* #####Presentation */
@@ -1287,17 +1303,17 @@ p.ruban::after {
     }
 
     .cards > p {
-        font-size: 18px;
+        font-size: 16px;
         margin: 30px;
     }
 
     .cards > .redirection > a {
-        font-size: 1rem;
+        font-size: 0.8rem;
 
     }
 
     .redirection a::after {
-        width: 220px;
+        width: 280px;
     }
 
     .container-ressources {
@@ -1369,6 +1385,9 @@ p.ruban::after {
             --_translate-delay: 200ms;
         }
     }
+
+
+
 
 }
 
