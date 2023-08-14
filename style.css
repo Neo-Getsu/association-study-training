@@ -122,12 +122,70 @@ svg {
 footer {
 
     background-color: var(--color-primary);
-    color: white;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-secondary);
     text-align: center;
+    width: 100%;
+}
+.address{
+    margin:10px;
+}
+
+.address > span{
+    color: var(--color-secondary);
+}
+
+.right> .icon-list-footer{
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
-    margin-top: 50px;
+    width: 100%;
+    margin: auto;
+    gap: 15px;
+
 
 }
+ .icon-list-footer > .icon-item-footer > svg{
+
+    width: 40px;
+     height: 40px;
+     color: var(--color-secondary);
+
+     cursor: pointer;
+
+ }
+.icon-list-footer > .icon-item-footer{
+    opacity: 0.5;
+    transition: opacity ease-in-out 500ms;
+}
+.icon-list-footer > .icon-item-footer:hover{
+    opacity: 1;
+
+}
+ .center{
+     margin: 20px;
+     text-align: center;
+ }
+
+ .right{
+     display: flex;
+     flex-direction: column;
+    margin: auto;
+     padding: 10px;
+     font-size: 0.8rem;
+     align-content: center;
+     align-items: center;
+     gap: 10px;
+ }
+.right  >svg{
+    color: var(--color-secondary);
+    width: 40px;
+    height: 40px;
+}
+
+
 
 /*######## === FIN => ${VARIABLE CSS/BASE SEMENTIQUE} === ####### */
 
@@ -560,7 +618,7 @@ opacity: 1;
     position: absolute;
     top: 15%;
     left: 20%;
-    text-transform: uppercase;
+
 }
 
 .timeWanted {
@@ -749,7 +807,7 @@ ul.program {
 
 li.el_prog {
     display: flex;
-    height: 100px;
+    height: 130px;
     align-items: center;
     margin: 10px 0;
     border-radius: 10px;
@@ -1291,6 +1349,11 @@ p.ruban::after {
         right: -800px;
     }
 
+
+
+
+
+
 }
 
 /*######## === FIN => ${MEDIA SCREEN <= 1024} === ####### */
@@ -1385,6 +1448,7 @@ p.ruban::after {
             --_translate-delay: 200ms;
         }
     }
+
 
 
 
