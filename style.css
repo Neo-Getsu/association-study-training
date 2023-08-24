@@ -53,14 +53,9 @@ table {
     border-spacing: 0;
 }
 
-button.btn {
-    cursor: pointer;
-    opacity: 0.75;
-}
 
-button.btn:hover {
-    opacity: 1
-}
+
+
 
 /*############## ===  ${VARIABLE CSS /BASE SEMENTIQUE} === ############## */
 :root {
@@ -394,30 +389,19 @@ main > h2.margtop {
 
 .redirection {
     display: flex;
-    gap: 20px;
     flex-direction: column;
     margin: 10px;
 }
 
 .redirection a {
-    width: 70%;
-    text-decoration: none;
-    font-weight: 400;
+    font-size: 1rem;
     padding: 5px;
     position: relative;
     color: var(--color-secondary);
+    font-weight: 500;
 }
 
-.redirection a::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 50%;
-    transform: translateX(-55%);
-    width: 180px;
-    height: 1px;
-    background-color: var(--color-secondary);
-}
+
 
 /*######## === FIN => ${PRESENTATION LIGUE SECTION - 1} === ####### */
 
@@ -1366,18 +1350,16 @@ p.ruban::after {
     }
 
     .cards > p {
-        font-size: 16px;
+        font-size: 20px;
         margin: 30px;
     }
 
     .cards > .redirection > a {
-        font-size: 0.8rem;
+        font-size: 1rem;
 
     }
 
-    .redirection a::after {
-        width: 280px;
-    }
+
 
     .container-ressources {
         width: 1300px;
@@ -1394,10 +1376,6 @@ p.ruban::after {
 
 /*############## ===  ${SECTION_NAME} === ############## */
 @media screen and (min-width: 1600px) {
-
-
-
-
     nav a {
         color: inherit;
         opacity: 0.7;
@@ -1421,7 +1399,6 @@ p.ruban::after {
         height: 0.2rem;
         width: 100%;
         background: var(--color-secondary);
-
         translate: var(--_translate, 0);
         scale: var(--_width, 0) 1;
         transition: scale 300ms var(--_scale-delay),
