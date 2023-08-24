@@ -571,13 +571,14 @@ opacity: 1;
     width: 300px;
     height: 700px;
     box-shadow: var(--shadow-box);
-    background: var(--color-primary);
+    background: var(--color-secondary);
     color: var(--color-wh);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
+
 }
 
 .forms-header {
@@ -592,8 +593,9 @@ opacity: 1;
     position: relative;
     width: 100%;
     height: 130px;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     box-shadow: var(--shadow-nav);
+
 }
 
 .title-header-donations > h3 {
@@ -632,7 +634,7 @@ opacity: 1;
     bottom: -1px;
     width: 75px;
     height: 2px;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 
 .onetime.active::after {
