@@ -863,22 +863,7 @@ li.el_prog {
 }
 
 
-#modal_register {
 
-    border: none;
-    width: 280px;
-    height: 600px;
-    position: absolute;
-    bottom: 0;
-    border-radius: 5px;
-    box-shadow: var(--shadow-box);
-    background-color: rgba(128, 128, 128, 0.5);
-    margin: 8px auto;
-    backdrop-filter: blur(5px);
-    z-index: 99;
-    color: var(--color-wh);
-
-}
 
 .evt-schedule > button, .modal > button, .btn > a.register {
     background-color: var(--color-secondary);
@@ -1192,16 +1177,23 @@ p.ruban::after {
         left: 180px;
     }
 
+
     #modal_register {
+
         border: none;
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 600px;
         position: absolute;
         bottom: 0;
-        margin: 10px auto;
+        border-radius: 5px;
+        box-shadow: var(--shadow-box);
+        background-color: rgba(128, 128, 128, 0.5);
+        margin: 8px auto;
+        backdrop-filter: blur(5px);
+        z-index: 99;
+        color: var(--color-wh);
 
     }
-
 
     .btn {
         width: 50%;
@@ -1252,11 +1244,7 @@ p.ruban::after {
         background-image: url('https://www.ligue-cancer.net/sites/default/files/styles/large/public/media/icons/2023-07/adobestock_236237463-.jpeg?itok=npHFpaTj');
     }
 
-    #modal_register {
-        width: 600px;
-        height: 650px;
-        margin: 8px auto;
-    }
+
 
     #tel, #Nom, #Prenom, #mail, #place {
         height: 20px;
