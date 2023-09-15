@@ -26,8 +26,10 @@ document.addEventListener('DOMContentLoaded', function (e) {
         }
     })
 
+
+    fileName !== "event.html" ? window.addEventListener('scroll', handleScrollTimeLine) : modalBtn.forEach((btn) => btn.addEventListener('click', handleDisplayModal))
+
     amountBtn.forEach((amount) => amount.addEventListener("click", handleDonationValue))
-    fileName === "index.html" ? window.addEventListener('scroll', handleScrollTimeLine) : modalBtn.forEach((btn) => btn.addEventListener('click', handleDisplayModal))
 });
 
 
