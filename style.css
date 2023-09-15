@@ -225,6 +225,7 @@ footer {
     border: none;
     border-radius: 5px;
     box-shadow: var(--shadow-box);
+    opacity: 0.7;
 }
 
 
@@ -439,19 +440,18 @@ section.widget-part {
 .btn-ressources {
     cursor: pointer;
     display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 120px;
+    height: 45px;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: var(--color-primary);
     color: var(--color-wh);
     border-radius: 5px;
     font-weight: 500;
     box-shadow: var(--shadow-nav);
     opacity: 0.8;
-    transition: opacity ease-in-out 500ms;
+    transition: opacity ease-in-out 300ms;
 }
 
 
@@ -460,8 +460,8 @@ section.widget-part {
 }
 
 .img-btn-ressource {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
 }
 .btn-ressources:hover{
 opacity: 1;
@@ -570,8 +570,8 @@ opacity: 1;
     width: 300px;
     height: 700px;
     box-shadow: var(--shadow-box);
-    background: var(--color-secondary);
-    color: var(--color-wh);
+    background-color: rgba(74, 152, 200, 0.33);
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,7 +592,7 @@ opacity: 1;
     position: relative;
     width: 100%;
     height: 130px;
-    background-color: var(--color-secondary);
+    background-color: rgba(74, 152, 200, 0.33);
     box-shadow: var(--shadow-nav);
 
 }
@@ -624,6 +624,7 @@ opacity: 1;
     flex: 1;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 
@@ -635,7 +636,18 @@ opacity: 1;
     height: 2px;
     background-color: var(--color-primary);
 }
-
+.monthly:hover{
+    color: white;
+    background-color: var(--color-primary);
+    opacity: 0.5;
+    border-bottom-right-radius: 10px;
+}
+.onetime:hover{
+    color: white;
+    background-color: var(--color-primary);
+    opacity: 0.5;
+    border-bottom-left-radius: 10px;
+}
 .onetime.active::after {
     left: 0;
     transform: translateX(50%);
@@ -665,6 +677,7 @@ opacity: 1;
     justify-items: center;
     row-gap: 5px;
 
+
 }
 
 button.amount {
@@ -673,6 +686,7 @@ button.amount {
     border-radius: 5px;
     text-align: center;
     transition: all ease-in-out 500ms;
+    background: var(--bg-secondary);
 }
 
 button.amount:hover, .donate:hover {
@@ -685,8 +699,9 @@ button.amount:hover, .donate:hover {
 .style_form {
     font-size: 1.0rem;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
-    border: var(--color-secondary) 1px solid;
+    color: white;
+    border: black 1px solid;
+
 }
 
 #amount {
@@ -732,10 +747,10 @@ small {
 }
 
 button.donate {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    background: var(--bg-secondary);
+    color: var(--bg-primary);
     font-weight: lighter;
-    border: 1px solid var(--color-secondary);
+    border: 1px solid black;
     transition: all ease-in-out 500ms;
 
 }
@@ -871,8 +886,12 @@ li.el_prog {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
-}
 
+}
+.btn:hover{
+    opacity: 1;
+    cursor: pointer;
+}
 .checkbox_container {
 
     padding: 10px;
@@ -1187,6 +1206,7 @@ p.ruban::after {
     .btn {
         width: 50%;
         font-size: 18px;
+        transition: opacity ease-in-out 200ms;
     }
 
     .date-details {

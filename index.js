@@ -13,6 +13,8 @@ let modalBtn = [showBtn, hideBtn]
 const path = window.location.pathname;
 const parts = path.split('/');
 const fileName = parts[parts.length - 1];
+const onetimeDonation = document.querySelector('.onetime')
+const monthlyDonation=document.querySelector('.monthly')
 
 //########### === === === LISTENERS === === === ########### //
 document.addEventListener('DOMContentLoaded', function (e) {
@@ -28,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
 
     fileName !== "event.html" ? window.addEventListener('scroll', handleScrollTimeLine) : modalBtn.forEach((btn) => btn.addEventListener('click', handleDisplayModal))
-
     amountBtn.forEach((amount) => amount.addEventListener("click", handleDonationValue))
 });
 
@@ -100,9 +101,22 @@ function handleDonationValue(e) {
     e.preventDefault()
     const btnValue = this.value;
     //inputDonation.value = btnValue;
-    document.querySelector('.output').innerHTML = `<p>${btnValue} &euro;</p>`
+    document.querySelector('.output').innerText = ` ${btnValue} &euro; `
 }
 
+const activateMonthlyDonation = () => {
+    monthlyDonation.classList.add('active');
+    onetimeDonation.classList.remove('active');
+};
 
+
+const activateOnetimeDonation = () => {
+    monthlyDonation.classList.remove('active');
+    onetimeDonation.classList.add('active');
+};
+
+
+monthlyDonation.addEventListener('click', activateMonthlyDonation);
+onetimeDonation.addEventListener('click', activateOnetimeDonation);
 
 
