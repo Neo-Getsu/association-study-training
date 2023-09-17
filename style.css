@@ -329,7 +329,7 @@ section.about-us {
     width: 100%;
     height: 400px;
     align-items: end;
-    background-image: url("https://www.ligue-cancer.net/sites/default/files/media/images/2023-07/amour-ligue_desktop-.jpg");
+    background-image: url("/assets/img/header.webp");
     background-size: cover;
     background-position: center;
     position: relative;
