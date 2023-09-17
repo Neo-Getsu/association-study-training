@@ -101,7 +101,7 @@ function handleDonationValue(e) {
     e.preventDefault()
     const btnValue = this.value;
     //inputDonation.value = btnValue;
-    document.querySelector('.output').innerText = ` ${btnValue} &euro; `
+    document.querySelector('.output').innerText = ` ${btnValue} €`
 }
 
 const activateMonthlyDonation = () => {
